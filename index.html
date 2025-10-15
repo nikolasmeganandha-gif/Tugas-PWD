@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ReservasiPunya.css" />
+    <title>Reservation Hotel Room</title>
+</head>
+<body>
+    <h1>Reservation Hotel Room</h1>
+    <form action="Submit.html" method="get">
+
+        <fieldset>
+            <legend><b>Personal Date</b></legend>
+            <div style="margin-left:40px;">
+                <p>1. Name <br>
+                    <input type="text" name="name" size="40">
+                </p>
+                <p>2. Gender <br>
+                    <input type="text" name="gender" size="40">
+                </p>
+                <p>3. Email Address <br>
+                    <input type="text" name="email" size="40">
+                </p>
+                <p>4. Telp Number <br>
+                    <input type="text" name="telp" size="40">
+                </p>
+            </div>
+        </fieldset>
+
+        <h3>Reservation Room Form</h3>
+        <div style="margin-left:40px;">
+            <p>1. Reservator Name <br>
+                <input type="text" name="reservator" size="40">
+            </p>
+            <p>2. Booking date <br>
+                <input type="text" name="bookingdate" size="40">
+            </p>
+            <p>3. Room Type <br>
+                <select name="roomtype">
+                    <option>Deluxe</option>
+                    <option>Standard</option>
+                    <option>Suite</option>
+                </select>
+            </p>
+            <p>4. Bed Type <br>
+                <select name="bedtype">
+                    <option>Single bed</option>
+                    <option>Double bed</option>
+                </select>
+            </p>
+            <p>5. Breakfast <br>
+                <input type="radio" name="breakfast" value="with" checked> With Breakfast
+                <input type="radio" name="breakfast" value="without"> Without Breakfast
+            </p>
+        </div>
+
+        <fieldset>
+            <legend><b>Payment</b></legend>
+            <div style="margin-left:40px;">
+                <p>1. Check in date <br>
+                    <input type="text" name="checkin" size="40">
+                </p>
+                <p>2. Check out date <br>
+                    <input type="text" name="checkout" size="40">
+                </p>
+                <p>3. Payment Method <br>
+                    <select name="payment">
+                        <option>Cash</option>
+                        <option>Credit Card</option>
+                        <option>Transfer</option>
+                    </select>
+                </p>
+            </div>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
